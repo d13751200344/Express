@@ -7,8 +7,12 @@
     <title>Homepage</title>
 </head>
 <body>
-    <h1>This is the hompage.</h1>
-    <p>Welcome.</p>
+   <form action="/formHandling" method="GET>
+       <label for="fullname">Your name:</label>
+       <input type="text" id="fullname" name="fullname">
+       <label for="age">Your age:</label>
+       <input type="number" id="age" name="age">
+       <button type="submit">Submit</button>
+   </form>
 </body>
-    <script src="./app.js"></script>
 </html>
