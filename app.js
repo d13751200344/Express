@@ -1,6 +1,11 @@
 const express = require("express");
 const app = express();
 
+//middleware
+app.use(express.static("public"));
+//藉此連結到/public/styles/style.css
+
+
 app.get("/", (req, res) => {
 	res.sendFile (__dirname+"/index.html")
 });
